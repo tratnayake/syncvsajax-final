@@ -1,0 +1,24 @@
+<!-- Import the header (css,navbar and stuff) -->
+<% include ./partials/header %>
+<div class="container">
+	<h1 class="text-center"> Check out our awesome users!</h1>
+
+		<table class="col-xs-offset-3 col-xs-6">
+			<tr>
+			<th class="text-center">Username</th>
+			<th class="text-center">Email Address</th>
+			</tr>
+			<!-- For each user -->
+			<% for(var i=0; i<users.length; i++) {%>
+				<!-- Create a new row -->
+				<tr>
+					<td><%= users[i].name %></td>
+					<td><%= users[i].email %></td>
+				</tr>
+			<% } %>
+			
+		</table>
+</div>
+
+<!-- Import the footer (js and stuff) -->
+<% include ./partials/header %>
